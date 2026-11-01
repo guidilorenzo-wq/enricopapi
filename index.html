@@ -59,4 +59,208 @@
         }
 
         /* Sezione Bio */
-        .bio-card
+        .bio-card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #f1f5f9;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-left: 4px solid #38bdf8;
+            padding-left: 12px;
+        }
+
+        .bio-card p {
+            color: #cbd5e1;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Griglia Esperienze con Immagini */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #38bdf8;
+            margin-bottom: 5px;
+        }
+
+        .job-date {
+            font-size: 0.85em;
+            color: #94a3b8;
+            margin-bottom: 12px;
+            display: inline-block;
+            background-color: #0f172a;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .card-content p {
+            color: #cbd5e1;
+            font-size: 0.95em;
+        }
+
+        /* Servizi/Competenze Banner */
+        .services-section {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .services-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .services-list li {
+            background-color: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #38bdf8;
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b1120;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+        }
+
+        footer p {
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 10px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #7dd3fc;
+        }
+
+        .btn-link.secondary {
+            background-color: transparent;
+            color: #38bdf8;
+            border: 2px solid #38bdf8;
+        }
+
+        .btn-link.secondary:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Enrico Papi" class="profile-img">
+        <h1>Enrico Papi</h1>
+        <p class="subtitle">Car Valuator & Automotive Expert</p>
+    </header>
+
+    <main>
+        <section class="bio-card">
+            <h2>Chi Sono</h2>
+            <p>
+                Dalla grande passione per i motori a un'esperienza consolidata sul campo: affianco privati e professionisti nella valutazione analitica di auto usate e da collezione. Unisco la precisione dell'analisi tecnica alla profonda conoscenza delle dinamiche di mercato, garantendo stime affidabili, oggettive e trasparenti per ogni tipologia di veicolo.
+            </p>
+        </section>
+
+        <h2>Esperienze di Rilievo</h2>
+        <section class="experience-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Valutazione auto usate" class="card-img">
+                <div class="card-content">
+                    <p class="job-title">Senior Car Evaluator</p>
+                    <span class="job-date">2019 - Presente</span>
+                    <p>Perizia tecnica, ispezione dello stato d'uso e determinazione precisa del valore commerciale residuo di auto recenti e usate.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Auto sportive e di pregio" class="card-img">
+                <div class="card-content">
+                    <p class="job-title">Specialista Veicoli di Pregio</p>
+                    <span class="job-date">2015 - 2019</span>
+                    <p>Valutazione di automobili sportive, storiche e di fascia alta, con particolare attenzione alla verifica dello storico dei tagliandi e dell'originalità dei componenti.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Consulenza mercato automotive" class="card-img">
+                <div class="card-content">
+                    <p class="job-title">Consulente Trattative</p>
+                    <span class="job-date">2012 - 2015</span>
+                    <p>Assistenza e consulenza mirata al cliente durante le fasi di compravendita per evitare brutte sorprese ed ottimizzare il budget d'acquisto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Competenze & Servizi Offeriti</h2>
+            <ul class="services-list">
+                <li>Perizia Tecnica Dettagliata</li>
+                <li>Stima del Valore Realizzabile</li>
+                <li>Controllo Storico Manutenzioni</li>
+                <li>Analisi Fluttuazioni di Mercato</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Per saperne di più o consultare le fonti ufficiali:</p>
+        <a href="https://it.wikipedia.org/wiki/Enrico_Papi" target="_blank" class="btn-link secondary">Profilo Wikipedia</a>
+        <a href="https://www.noicompriamoauto.it/" target="_blank" class="btn-link">Noi Valutiamo Auto</a>
+    </footer>
+
+</body>
+</html>
