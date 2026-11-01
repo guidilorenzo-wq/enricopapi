@@ -16,15 +16,27 @@
             line-height: 1.6;
             background-color: #0f172a;
             color: #f8fafc;
-           
-            <a href="servizi.html"
-             style="display:block;
-          background:yellow;
-          color:black;
-          padding:20px;
-          text-align:center;">
-    CLICCA QUI PER I SERVIZI
-</a>
+        }
+
+        /* Menu di Navigazione */
+        nav {
+            background-color: #0b1120;
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #38bdf8;
         }
 
         /* Hero Header */
@@ -210,6 +222,11 @@
 </head>
 <body>
 
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="servizi.html">Servizi</a>
+    </nav>
+
     <header>
         <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Enrico Papi" class="profile-img">
         <h1>Enrico Papi</h1>
@@ -255,7 +272,7 @@
         </section>
 
         <section class="services-section">
-            <h2>Competenze & Servizi Offeriti</h2>
+            <h2>Competenze & Servizi Offerti</h2>
             <ul class="services-list">
                 <li>Perizia Tecnica Dettagliata</li>
                 <li>Stima del Valore Realizzabile</li>
